@@ -3,19 +3,9 @@
   "name": "Zyphira's Tools",
   "icons": [
     {
-      "src": "assets/images/launchicons/icon48.png",
+      "src": "assets/images/icon32.png",
       "type": "image/png",
-      "sizes": "48x48"
-    },
-    {
-      "src": "assets/images/launchicons/icon96.png",
-      "type": "image/png",
-      "sizes": "96x96"
-    },
-    {
-      "src": "assets/images/launchicons/icon192.png",
-      "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "32x32"
     }
   ],
   "start_url": "/mobile/app/management",
