@@ -47,6 +47,7 @@
     "force-ssl-heroku": "^1.0.2",
     "i": "^0.3.6",
     "npm": "^6.4.1",
+    "open": "0.0.5",
     "react": "^16.6.3",
     "react-bootstrap": "^0.32.4",
     "react-dom": "^16.6.3",
