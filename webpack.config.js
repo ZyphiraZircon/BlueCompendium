@@ -1,10 +1,12 @@
 const webpack = require('webpack');
 const path = require('path');
+const ManifestPlugin = require('webpack-manifest-plugin');
 
 module.exports = {
   entry: [
     './src/index',
   ],
+  target: 'web',
   module: {
     rules: [
       {
@@ -26,6 +28,11 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new ManifestPlugin({
+      fileName: 'asset-manifest.json',
+    }),
+  ],
   output: {
     path: __dirname + '/dist',
     publicPath: '/',

@@ -145,7 +145,7 @@ class App extends React.Component {
           <Nav pullRight>
             <NavItem style={styles.bottomnavitem} eventKey={2} href="#">
               <a style={{ marginRight: 10 }} onClick={() => this.openFooterLinks('https://ko-fi.com/J3J5N2E9')}><img height="36" style={{ border: 0, height: 36 }} src="https://az743702.vo.msecnd.net/cdn/kofi2.png?v=0" border="0" alt="Buy Me a Coffee at ko-fi.com" /></a>
-              <a onClick={() => this.openFooterLinks('https://www.twitter.com/ZyphiraZ')}><img height="36" style={{ border: 0, height: 36 }} src="../../assets/Twitter_Logo_Blue.png" border="0" alt="@ZyphiraZ on Twitter" /></a>
+              <a onClick={() => this.openFooterLinks('https://www.twitter.com/ZyphiraZ')}><img height="36" style={{ border: 0, height: 36 }} src={require('../../assets/Twitter_Logo_Blue.png')} border="0" alt="@ZyphiraZ on Twitter" /></a>
             </NavItem>
           </Nav>
         </Navbar>

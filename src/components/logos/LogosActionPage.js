@@ -1,5 +1,8 @@
+/* eslint-disable global-require */
 import React from 'react';
 import { Grid, Row, Col, Image, Tooltip, OverlayTrigger, ButtonGroup, Button, Glyphicon, DropdownButton, MenuItem } from 'react-bootstrap';
+
+// import icon00 from '../../assets/00.png';
 
 const styles = {
   imageStyle: {
@@ -116,7 +119,7 @@ export default class LogosActionPage extends React.Component {
       actions: [
         {
           name: 'Wisdom of the Aetherweaver',
-          icon: '../../assets/icons/logos/actions/00.png',
+          icon: require('../../assets/icons/logos/actions/00.png'),
           description: 'Increases magic damage dealt by 60%. Lasts until cancelled.',
           uses: 3,
           tanks: false,
@@ -129,7 +132,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Wisdom of the Martialist',
-          icon: '../../assets/icons/logos/actions/01.png',
+          icon: require('../../assets/icons/logos/actions/01.png'),
           description: 'Increases physical damage dealt by 40%. Lasts until cancelled.',
           uses: 3,
           tanks: true,
@@ -142,7 +145,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Wisdom of the Platebearer',
-          icon: '../../assets/icons/logos/actions/02.png',
+          icon: require('../../assets/icons/logos/actions/02.png'),
           description: 'Increases defense by 3,000 and maximum HP by 50%. Lasts until cancelled.',
           uses: 3,
           tanks: false,
@@ -155,7 +158,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Wisdom of the Guardian',
-          icon: '../../assets/icons/logos/actions/03.png',
+          icon: require('../../assets/icons/logos/actions/03.png'),
           description: 'Increases defense by 1,800 and maximum HP by 10%. Lasts until cancelled.',
           uses: 3,
           tanks: true,
@@ -169,7 +172,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Wisdom of the Ordained',
-          icon: '../../assets/icons/logos/actions/04.png',
+          icon: require('../../assets/icons/logos/actions/04.png'),
           description: 'Increases maximum MP by 50% and healing magic potency by 25%. Lasts until cancelled.',
           uses: 3,
           tanks: false,
@@ -183,7 +186,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Wisdom of the Skirmisher',
-          icon: '../../assets/icons/logos/actions/05.png',
+          icon: require('../../assets/icons/logos/actions/05.png'),
           description: 'Increases damage dealt by 12%. Lasts until cancelled.',
           uses: 3,
           tanks: false,
@@ -197,7 +200,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Wisdom of the Watcher',
-          icon: '../../assets/icons/logos/actions/06.png',
+          icon: require('../../assets/icons/logos/actions/06.png'),
           description: 'Increases evasion by 25% while reducing damage dealt by 5%. Lasts until cancelled.',
           uses: 3,
           tanks: true,
@@ -210,7 +213,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Wisdom of the Templar',
-          icon: '../../assets/icons/logos/actions/07.png',
+          icon: require('../../assets/icons/logos/actions/07.png'),
           description: 'Increases healing magic potency by 50% and maximum HP by 30%, while reducing damage dealt by 5%. Lasts until cancelled.',
           uses: 3,
           tanks: false,
@@ -223,7 +226,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Wisdom of the Irregular',
-          icon: '../../assets/icons/logos/actions/08.png',
+          icon: require('../../assets/icons/logos/actions/08.png'),
           description: 'Increases damage dealt by 21% while reducing magic defense by 60%. Lasts until cancelled.',
           uses: 3,
           tanks: true,
@@ -236,7 +239,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Wisdom of the Breathtaker',
-          icon: '../../assets/icons/logos/actions/09.png',
+          icon: require('../../assets/icons/logos/actions/09.png'),
           description: 'Increases poison resistance and movement speed, including mount speed, and increases evasion by 10%. Lasts until cancelled.',
           uses: 3,
           tanks: true,
@@ -249,7 +252,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Wisdom of the Remembered',
-          icon: '../../assets/icons/logos/actions/10.png',
+          icon: require('../../assets/icons/logos/actions/10.png'),
           description: 'Increases maximum HP by 10% and accuracy by 30% and grants a 70% chance of automatic revival upon KO. Lasts until cancelled.',
           uses: 1,
           tanks: true,
@@ -263,7 +266,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Protect L',
-          icon: '../../assets/icons/logos/actions/11.png',
+          icon: require('../../assets/icons/logos/actions/11.png'),
           description: 'Increases the physical defense of target by 1,000 for 30m.',
           uses: '∞',
           tanks: true,
@@ -276,7 +279,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Shell L',
-          icon: '../../assets/icons/logos/actions/12.png',
+          icon: require('../../assets/icons/logos/actions/12.png'),
           description: 'Increases the magic defense of target by 1,000 for 30m.',
           uses: '∞',
           tanks: true,
@@ -290,7 +293,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Death L',
-          icon: '../../assets/icons/logos/actions/13.png',
+          icon: require('../../assets/icons/logos/actions/13.png'),
           description: 'KOs target. The less the target\'s HP, the greater the chance of success.',
           uses: 30,
           tanks: true,
@@ -303,7 +306,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Focus L',
-          icon: '../../assets/icons/logos/actions/14.png',
+          icon: require('../../assets/icons/logos/actions/14.png'),
           description: 'Grants a stack of Boost for 30s. Each stack increases potency of next weaponskill by 30%. Max 16 stacks. Shares a recast timer with all weaponskills.',
           uses: 99,
           tanks: true,
@@ -316,7 +319,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Paralyze L',
-          icon: '../../assets/icons/logos/actions/15.png',
+          icon: require('../../assets/icons/logos/actions/15.png'),
           description: 'Afflicts target with Paralysis for 60s.',
           uses: 99,
           tanks: true,
@@ -329,7 +332,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Paralyze L III',
-          icon: '../../assets/icons/logos/actions/16.png',
+          icon: require('../../assets/icons/logos/actions/16.png'),
           description: 'Afflicts target and all neaby enemies with Paralysis for 60s.',
           uses: 20,
           tanks: true,
@@ -342,7 +345,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Swift L',
-          icon: '../../assets/icons/logos/actions/17.png',
+          icon: require('../../assets/icons/logos/actions/17.png'),
           description: 'Greatly increases movement speed for 10s.',
           uses: 20,
           tanks: true,
@@ -355,7 +358,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Featherfoot L',
-          icon: '../../assets/icons/logos/actions/18.png',
+          icon: require('../../assets/icons/logos/actions/18.png'),
           description: 'Increases evasion by 15% for 45s.',
           uses: 50,
           tanks: true,
@@ -369,7 +372,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Spirit Dart L',
-          icon: '../../assets/icons/logos/actions/19.png',
+          icon: require('../../assets/icons/logos/actions/19.png'),
           description: 'Delivers a ranged attack with a potency of 1oo and afﬂicts target with spirit Dart L, increasing damage taken by 8% for 60s.',
           uses: 50,
           tanks: false,
@@ -382,7 +385,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Catastrophe L',
-          icon: '../../assets/icons/logos/actions/20.png',
+          icon: require('../../assets/icons/logos/actions/20.png'),
           description: 'Deals unaspected damage to all nearby enemies with a potency of 4,000, while dealing damage with a potency of 999,999 to self.',
           uses: 3,
           tanks: true,
@@ -395,7 +398,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Dispel L',
-          icon: '../../assets/icons/logos/actions/21.png',
+          icon: require('../../assets/icons/logos/actions/21.png'),
           description: 'Removes one beneﬁcial status from target.',
           uses: '∞',
           tanks: false,
@@ -409,7 +412,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Feint L',
-          icon: '../../assets/icons/logos/actions/22.png',
+          icon: require('../../assets/icons/logos/actions/22.png'),
           description: 'Delivers an attack with a potency of 100 and reduces target\'s evasion for 60s.',
           uses: '∞',
           tanks: true,
@@ -422,7 +425,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Stealth L',
-          icon: '../../assets/icons/logos/actions/23.png',
+          icon: require('../../assets/icons/logos/actions/23.png'),
           description: 'Activate to become invisible and reduce movement speed by 50%. Has no effect on certain enemies with special sight. Cannot be executed while in combat.',
           uses: 50,
           tanks: true,
@@ -435,7 +438,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Aetherial Manipulation L',
-          icon: '../../assets/icons/logos/actions/24.png',
+          icon: require('../../assets/icons/logos/actions/24.png'),
           description: 'Rush to a target\'s side. unable to cast if bound.',
           uses: 99,
           tanks: true,
@@ -448,7 +451,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Backstep L',
-          icon: '../../assets/icons/logos/actions/25.png',
+          icon: require('../../assets/icons/logos/actions/25.png'),
           description: 'Jump 10 yalms back from current position. Cannot be executed while bound.',
           uses: 99,
           tanks: true,
@@ -461,7 +464,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Tranquilizer L',
-          icon: '../../assets/icons/logos/actions/26.png',
+          icon: require('../../assets/icons/logos/actions/26.png'),
           description: 'Stuns target for 8s',
           uses: 50,
           tanks: true,
@@ -474,7 +477,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Bloodbath L',
-          icon: '../../assets/icons/logos/actions/27.png',
+          icon: require('../../assets/icons/logos/actions/27.png'),
           description: 'Converts a portion of damage dealt into HP. Lasts 45s.',
           uses: 50,
           tanks: true,
@@ -488,7 +491,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Rejuvenate L',
-          icon: '../../assets/icons/logos/actions/28.png',
+          icon: require('../../assets/icons/logos/actions/28.png'),
           description: 'Instantly restores 500 TP and 50% of maximum MP.',
           uses: 50,
           tanks: true,
@@ -501,7 +504,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Haymaker L',
-          icon: '../../assets/icons/logos/actions/29.png',
+          icon: require('../../assets/icons/logos/actions/29.png'),
           description: 'Delivers an attack with a potency of 300 and afflicts target with Slow +20%. Lasts 30s. Can only be executed immediately after evading an attack.',
           uses: 50,
           tanks: true,
@@ -514,7 +517,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Rapid Recast L',
-          icon: '../../assets/icons/logos/actions/30.png',
+          icon: require('../../assets/icons/logos/actions/30.png'),
           description: 'Shortens recast time for next ability used by 50%. Lasts 15s.',
           uses: 50,
           tanks: true,
@@ -527,7 +530,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Cure L',
-          icon: '../../assets/icons/logos/actions/31.png',
+          icon: require('../../assets/icons/logos/actions/31.png'),
           description: 'Restores target\'s HP. Cure Potency: 9,000.',
           uses: '∞',
           tanks: true,
@@ -540,7 +543,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Cure L II',
-          icon: '../../assets/icons/logos/actions/32.png',
+          icon: require('../../assets/icons/logos/actions/32.png'),
           description: 'Restores target\'s HP. Cure Potency: 12,000.',
           uses: 50,
           tanks: true,
@@ -554,7 +557,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Stoneskin L',
-          icon: '../../assets/icons/logos/actions/33.png',
+          icon: require('../../assets/icons/logos/actions/33.png'),
           description: 'Creates a barrier around target that absorbs damage totaling 10% of target\'s maximum HP. Lasts 30s.',
           uses: 99,
           tanks: true,
@@ -568,7 +571,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Cure L III',
-          icon: '../../assets/icons/logos/actions/34.png',
+          icon: require('../../assets/icons/logos/actions/34.png'),
           description: 'Restores HP of target and all party members nearby target. Cure Potency: 9,000.',
           uses: 50,
           tanks: true,
@@ -581,7 +584,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Regen L',
-          icon: '../../assets/icons/logos/actions/35.png',
+          icon: require('../../assets/icons/logos/actions/35.png'),
           description: 'Grants healing over time effect to target. Cure Potency: 2,500. Lasts 21s.',
           uses: 99,
           tanks: true,
@@ -594,7 +597,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Esuna L',
-          icon: '../../assets/icons/logos/actions/36.png',
+          icon: require('../../assets/icons/logos/actions/36.png'),
           description: 'Removes a single detrimental effect from target.',
           uses: '∞',
           tanks: true,
@@ -607,7 +610,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Incense L',
-          icon: '../../assets/icons/logos/actions/37.png',
+          icon: require('../../assets/icons/logos/actions/37.png'),
           description: 'Gesture threateningly, placing yourself at the top of a target\'s enmity list and increasing enmity generation for 15s.',
           uses: '∞',
           tanks: false,
@@ -620,7 +623,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Raise L',
-          icon: '../../assets/icons/logos/actions/38.png',
+          icon: require('../../assets/icons/logos/actions/38.png'),
           description: 'Resurrects target to a weakened state.',
           uses: 99,
           tanks: true,
@@ -633,7 +636,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Bravery L',
-          icon: '../../assets/icons/logos/actions/39.png',
+          icon: require('../../assets/icons/logos/actions/39.png'),
           description: 'Increases target\'s damage dealt by 10% for 100s.',
           uses: 99,
           tanks: false,
@@ -646,7 +649,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Solid Shield L',
-          icon: '../../assets/icons/logos/actions/40.png',
+          icon: require('../../assets/icons/logos/actions/40.png'),
           description: 'Reduces physical damage taken by 99% for 8s.',
           uses: 30,
           tanks: false,
@@ -659,7 +662,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Spell Shield L',
-          icon: '../../assets/icons/logos/actions/41.png',
+          icon: require('../../assets/icons/logos/actions/41.png'),
           description: 'Reduces magic damage taken by 99% for 8s.',
           uses: 30,
           tanks: false,
@@ -672,7 +675,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Reflect L',
-          icon: '../../assets/icons/logos/actions/42.png',
+          icon: require('../../assets/icons/logos/actions/42.png'),
           description: 'Creates a rnagic-reflecting barrier around self or party member. Lasts 10s.',
           uses: 99,
           tanks: true,
@@ -685,7 +688,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Smite L',
-          icon: '../../assets/icons/logos/actions/43.png',
+          icon: require('../../assets/icons/logos/actions/43.png'),
           description: 'Delivers an attack with a potency of 1000 and restores an amount of own HP proportional to damage dealt. Can only be executed when your HP is below 50%.',
           uses: 30,
           tanks: true,
@@ -698,7 +701,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Refresh L',
-          icon: '../../assets/icons/logos/actions/44.png',
+          icon: require('../../assets/icons/logos/actions/44.png'),
           description: 'Increases the amount of magia aether regenerated over time by self and nearby party members. Lasts 30s.',
           uses: 99,
           tanks: false,
@@ -711,7 +714,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Banish L',
-          icon: '../../assets/icons/logos/actions/45.png',
+          icon: require('../../assets/icons/logos/actions/45.png'),
           description: 'Deals unaspected damage with a potency of 200 and afflicts undead targets with Banish L, increasing damage taken by 12% for 60s.',
           uses: 99,
           tanks: false,
@@ -724,7 +727,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Banish L III',
-          icon: '../../assets/icons/logos/actions/46.png',
+          icon: require('../../assets/icons/logos/actions/46.png'),
           description: 'Deals unaspected damage with a potency of 150 to target and all nearby enemies and afﬂicts undead targets with Banish L, increasing damage taken by 12% for 60s.',
           uses: 50,
           tanks: false,
@@ -737,7 +740,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Magic Burst L',
-          icon: '../../assets/icons/logos/actions/47.png',
+          icon: require('../../assets/icons/logos/actions/47.png'),
           description: 'Increases spell damage by 100% while increasing MP cost for 20s.',
           uses: 5,
           tanks: false,
@@ -750,7 +753,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Double Edge L',
-          icon: '../../assets/icons/logos/actions/48.png',
+          icon: require('../../assets/icons/logos/actions/48.png'),
           description: 'Stacking buff that increases physical damage dealt by 15% and deals damage over time with potency 1200 per stack. Lasts 48s. Stacks increase every 3s. Max 16 stacks.',
           uses: 5,
           tanks: true,
@@ -763,7 +766,7 @@ export default class LogosActionPage extends React.Component {
         },
         {
           name: 'Eagle Eye Shot L',
-          icon: '../../assets/icons/logos/actions/49.png',
+          icon: require('../../assets/icons/logos/actions/49.png'),
           description: 'Delivers a ranged attack with a potency of 80. Potency increases up to 1,000% the lower the target\'s HP. Generates signiﬁcant enmity upon use.',
           uses: 20,
           tanks: false,
@@ -782,7 +785,7 @@ export default class LogosActionPage extends React.Component {
           sourceIndex: 0,
           type: 'Offensive',
           index: 0,
-          icon: '../../assets/icons/logos/other/m00.png',
+          icon: require('../../assets/icons/logos/other/m00.png'),
         },
         {
           name: 'Wisdom of the Martialist',
@@ -790,7 +793,7 @@ export default class LogosActionPage extends React.Component {
           sourceIndex: 0,
           type: 'Offensive',
           index: 1,
-          icon: '../../assets/icons/logos/other/m00.png',
+          icon: require('../../assets/icons/logos/other/m00.png'),
         },
         {
           name: 'Wisdom of the Platebearer',
@@ -798,7 +801,7 @@ export default class LogosActionPage extends React.Component {
           sourceIndex: 0,
           type: 'Protective',
           index: 2,
-          icon: '../../assets/icons/logos/other/m01.png',
+          icon: require('../../assets/icons/logos/other/m01.png'),
         },
         {
           name: 'Incense L',
@@ -806,7 +809,7 @@ export default class LogosActionPage extends React.Component {
           sourceIndex: 0,
           type: 'Protective',
           index: 3,
-          icon: '../../assets/icons/logos/other/m01.png',
+          icon: require('../../assets/icons/logos/other/m01.png'),
         },
         {
           name: 'Cure L',
@@ -814,7 +817,7 @@ export default class LogosActionPage extends React.Component {
           sourceIndex: 0,
           type: 'Curative',
           index: 4,
-          icon: '../../assets/icons/logos/other/m02.png',
+          icon: require('../../assets/icons/logos/other/m02.png'),
         },
         {
           name: 'Backstep L',
@@ -822,7 +825,7 @@ export default class LogosActionPage extends React.Component {
           sourceIndex: 0,
           type: 'Tactical',
           index: 5,
-          icon: '../../assets/icons/logos/other/m03.png',
+          icon: require('../../assets/icons/logos/other/m03.png'),
         },
         {
           name: 'Paralyze L',
@@ -830,7 +833,7 @@ export default class LogosActionPage extends React.Component {
           sourceIndex: 0,
           type: 'Inimical',
           index: 6,
-          icon: '../../assets/icons/logos/other/m04.png',
+          icon: require('../../assets/icons/logos/other/m04.png'),
         },
         {
           name: 'Esuna L',
@@ -838,7 +841,7 @@ export default class LogosActionPage extends React.Component {
           sourceIndex: 1,
           type: 'Curative',
           index: 7,
-          icon: '../../assets/icons/logos/other/m02.png',
+          icon: require('../../assets/icons/logos/other/m02.png'),
         },
         {
           name: 'Raise L',
@@ -846,7 +849,7 @@ export default class LogosActionPage extends React.Component {
           sourceIndex: 1,
           type: 'Curative',
           index: 8,
-          icon: '../../assets/icons/logos/other/m02.png',
+          icon: require('../../assets/icons/logos/other/m02.png'),
         },
         {
           name: 'Feint L',
@@ -854,7 +857,7 @@ export default class LogosActionPage extends React.Component {
           sourceIndex: 1,
           type: 'Tactical',
           index: 9,
-          icon: '../../assets/icons/logos/other/m03.png',
+          icon: require('../../assets/icons/logos/other/m03.png'),
         },
         {
           name: 'Tranquilizer L',
@@ -862,7 +865,7 @@ export default class LogosActionPage extends React.Component {
           sourceIndex: 1,
           type: 'Inimical',
           index: 10,
-          icon: '../../assets/icons/logos/other/m04.png',
+          icon: require('../../assets/icons/logos/other/m04.png'),
         },
         {
           name: 'Protect L',
@@ -870,7 +873,7 @@ export default class LogosActionPage extends React.Component {
           sourceIndex: 1,
           type: 'Mitigative',
           index: 11,
-          icon: '../../assets/icons/logos/other/m05.png',
+          icon: require('../../assets/icons/logos/other/m05.png'),
         },
         {
           name: 'Wisdom of the Skirmisher',
@@ -878,7 +881,7 @@ export default class LogosActionPage extends React.Component {
           sourceIndex: 2,
           type: 'Offensive',
           index: 12,
-          icon: '../../assets/icons/logos/other/m00.png',
+          icon: require('../../assets/icons/logos/other/m00.png'),
         },
         {
           name: 'Bloodbath L',
@@ -886,7 +889,7 @@ export default class LogosActionPage extends React.Component {
           sourceIndex: 2,
           type: 'Offensive',
           index: 13,
-          icon: '../../assets/icons/logos/other/m00.png',
+          icon: require('../../assets/icons/logos/other/m00.png'),
         },
         {
           name: 'Wisdom of the Guardian',
@@ -894,7 +897,7 @@ export default class LogosActionPage extends React.Component {
           sourceIndex: 3,
           type: 'Protective',
           index: 14,
-          icon: '../../assets/icons/logos/other/m01.png',
+          icon: require('../../assets/icons/logos/other/m01.png'),
         },
         {
           name: 'Wisdom of the Remembered',
@@ -902,7 +905,7 @@ export default class LogosActionPage extends React.Component {
           sourceIndex: 3,
           type: 'Protective',
           index: 15,
-          icon: '../../assets/icons/logos/other/m01.png',
+          icon: require('../../assets/icons/logos/other/m01.png'),
         },
         {
           name: 'Wisdom of the Ordained',
@@ -910,7 +913,7 @@ export default class LogosActionPage extends React.Component {
           sourceIndex: 4,
           type: 'Curative',
           index: 16,
-          icon: '../../assets/icons/logos/other/m02.png',
+          icon: require('../../assets/icons/logos/other/m02.png'),
         },
         {
           name: 'Cure L II',
@@ -918,7 +921,7 @@ export default class LogosActionPage extends React.Component {
           sourceIndex: 4,
           type: 'Curative',
           index: 17,
-          icon: '../../assets/icons/logos/other/m02.png',
+          icon: require('../../assets/icons/logos/other/m02.png'),
         },
         {
           name: 'Featherfoot L',
@@ -926,7 +929,7 @@ export default class LogosActionPage extends React.Component {
           sourceIndex: 5,
           type: 'Tactical',
           index: 18,
-          icon: '../../assets/icons/logos/other/m03.png',
+          icon: require('../../assets/icons/logos/other/m03.png'),
         },
         {
           name: 'Stealth L',
@@ -934,7 +937,7 @@ export default class LogosActionPage extends React.Component {
           sourceIndex: 5,
           type: 'Tactical',
           index: 19,
-          icon: '../../assets/icons/logos/other/m03.png',
+          icon: require('../../assets/icons/logos/other/m03.png'),
         },
         {
           name: 'Spirit Dart L',
@@ -942,7 +945,7 @@ export default class LogosActionPage extends React.Component {
           sourceIndex: 6,
           type: 'Inimical',
           index: 20,
-          icon: '../../assets/icons/logos/other/m04.png',
+          icon: require('../../assets/icons/logos/other/m04.png'),
         },
         {
           name: 'Dispel L',
@@ -950,7 +953,7 @@ export default class LogosActionPage extends React.Component {
           sourceIndex: 6,
           type: 'Inimical',
           index: 21,
-          icon: '../../assets/icons/logos/other/m04.png',
+          icon: require('../../assets/icons/logos/other/m04.png'),
         },
         {
           name: 'Shell L',
@@ -958,7 +961,7 @@ export default class LogosActionPage extends React.Component {
           sourceIndex: 7,
           type: 'Mitigative',
           index: 22,
-          icon: '../../assets/icons/logos/other/m05.png',
+          icon: require('../../assets/icons/logos/other/m05.png'),
         },
         {
           name: 'Stoneskin L',
@@ -966,53 +969,53 @@ export default class LogosActionPage extends React.Component {
           sourceIndex: 7,
           type: 'Mitigative',
           index: 23,
-          icon: '../../assets/icons/logos/other/m05.png',
+          icon: require('../../assets/icons/logos/other/m05.png'),
         },
       ],
       logograms: [
         {
           name: 'Conceptual Logogram',
-          icon: '../../assets/icons/logos/other/l01.png',
+          icon: require('../../assets/icons/logos/other/l01.png'),
           source: 'Killing elemental sprites; current or higher level',
           source2: 'Bronze bunny chests',
         },
         {
           name: 'Fundamental Logogram',
-          icon: '../../assets/icons/logos/other/l02.png',
+          icon: require('../../assets/icons/logos/other/l02.png'),
           source: 'EXP Chain of 30 or more',
           source2: 'Bronze bunny chests',
         },
         {
           name: 'Offensive Logogram',
-          icon: '../../assets/icons/logos/other/l03.png',
+          icon: require('../../assets/icons/logos/other/l03.png'),
           source: 'Gold bunny chests',
         },
         {
           name: 'Protective Logogram',
-          icon: '../../assets/icons/logos/other/l03.png',
+          icon: require('../../assets/icons/logos/other/l03.png'),
           source: 'Glaukopis (NM)',
           source2: 'Gold bunny chests',
         },
         {
           name: 'Curative Logogram',
-          icon: '../../assets/icons/logos/other/l03.png',
+          icon: require('../../assets/icons/logos/other/l03.png'),
           source: 'Graffiacane/Leucosia (NM)',
           source2: 'Silver bunny chests',
         },
         {
           name: 'Tactical Logogram',
-          icon: '../../assets/icons/logos/other/l03.png',
+          icon: require('../../assets/icons/logos/other/l03.png'),
           source: 'Heat-warped lockboxes',
         },
         {
           name: 'Inimical Logogram',
-          icon: '../../assets/icons/logos/other/l03.png',
+          icon: require('../../assets/icons/logos/other/l03.png'),
           source: 'Sophist/Ying-Yang/Eldthurs (NM)',
           source2: 'Killing elemental sprites; level 50+ and adaption',
         },
         {
           name: 'Mitigative Logogram',
-          icon: '../../assets/icons/logos/other/l03.png',
+          icon: require('../../assets/icons/logos/other/l03.png'),
           source: 'Killing undead; adaption',
           source2: 'Gold bunny chests',
         },
